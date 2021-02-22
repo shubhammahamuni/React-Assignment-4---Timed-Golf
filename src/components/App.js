@@ -70,12 +70,14 @@ class Timer extends React.Component {
        }
        
 
-    let sec = this.state.time % 60;
-    let min = Math.floor(this.state.time / 60);
-    let hour =Math.floor(this.state.time / 3600);
+    // let sec = this.state.time % 60;
+    // let min = Math.floor(this.state.time / 60);
+    // let hour =Math.floor(this.state.time / 3600);
 
-     console.log(this.state.tm)
-    return `${hour}:${min}:${sec}`
+    //  console.log(this.state.tm)
+    // return `${hour}:${min}:${sec}`
+  let sec = this.state.time
+  return `${sec}`
     
   }
 
