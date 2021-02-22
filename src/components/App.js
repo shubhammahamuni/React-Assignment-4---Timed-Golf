@@ -21,7 +21,7 @@ class Timer extends React.Component {
   
 
   componentWillUnmount() {
-    document.removeEventListener("keydown" ,this.handlekeypress)
+   // document.removeEventListener("keydown" ,this.handlekeypress)
     
    // console.log("componentunmount");
   }
@@ -65,6 +65,7 @@ class Timer extends React.Component {
   {
     if(this.state.x == 250 && this.state.y == 250){
          clearInterval(this.state.tm)
+         document.removeEventListener("keydown" ,this.handlekeypress)
         
        }
        
@@ -74,7 +75,7 @@ class Timer extends React.Component {
     let hour =Math.floor(this.state.time / 3600);
 
      console.log(this.state.tm)
-    return `${sec}:${min}:${hour}`
+    return `${hour}:${min}:${sec}`
     
   }
 
