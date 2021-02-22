@@ -43,3 +43,8 @@
   width: 50px;
   border-radius: 30px;
 }
+.start{
+  position: absolute;
+  left: 30px;
+  top: 70px;
+}
